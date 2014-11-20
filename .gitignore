@@ -1,0 +1,11 @@
+.vagrant/
+sys-temp/
+umibackup/
+errors/logs/
+images/
+files/
+
+autothumbs
+thumbs
+.tmb
+*.log
