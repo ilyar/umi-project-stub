@@ -143,6 +143,11 @@ Vagrant.configure("2") do |config|
   # Set share folder
   config.vm.synced_folder "./" , "/var/www/#{project_name}", :mount_options => ["dmode=777", "fmode=666"]
 
+  # Config vagrant-cachier
+  if Vagrant.has_plugin?("vagrant-cachier")
+    config.cache.scope = :box
+  end
+  
   # Provider-specific configuration so you can fine-tune VirtualBox for Vagrant.
   # These expose provider-specific options.
   config.vm.provider :virtualbox do |vm|
@@ -154,7 +159,7 @@ Vagrant.configure("2") do |config|
       vm.customize ["modifyvm", :id, "--ioapic", "on"]
     end
   end
-
+  
   # Config vagrant-hostmanager
   if Vagrant.has_plugin?("vagrant-hostmanager")
     config.hostmanager.enabled = true
