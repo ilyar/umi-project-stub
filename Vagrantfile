@@ -19,7 +19,11 @@ SCRIPT
 
 # Check script
 $check = <<SCRIPT
+    lsb_release -a
+    apachectl -V
+     mysql --version
     php -v
+    php -m
 SCRIPT
 
 # General project settings for customize
