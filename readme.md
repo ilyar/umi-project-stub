@@ -5,8 +5,8 @@
 ## Зависимости
 
 * VirtualBox <http://www.virtualbox.com>
-* Vagrant <http://www.vagrantup.com>
- * [vagrant-hostmanager](https://github.com/smdahlen/vagrant-hostmanager) `vagrant plugin install vagrant-hostmanager`
+* Vagrant <http://www.vagrantup.com>, вместе с плагинами (не обязательно):
+ * Автоматическая настройка локального домена [vagrant-hostmanager](https://github.com/smdahlen/vagrant-hostmanager) `vagrant plugin install vagrant-hostmanager`
 
 ## Использование
 
