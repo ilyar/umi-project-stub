@@ -65,7 +65,7 @@ $virtual_host = <<SCRIPT
       CustomLog /var/log/apache2/#{project_name}-access.log combined
     </VirtualHost>" > /etc/apache2/sites-available/#{project_name}.conf
 
-    a2ensite #{project_name}
+    cd /etc/apache2/sites-enabled && ln -fs ../sites-available/#{project_name}.conf .
 
     # Restart Services
     service apache2 restart
