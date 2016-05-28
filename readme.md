@@ -54,6 +54,7 @@ phpMyAdmin <http://project_name_dir.local/phpmyadmin/>
 ### Настройки окружения `Vagrantfile`
 
 ```bash
+custom_vm_os         = false # default 'precise' or 'trusty'
 custom_project_name  = false # default from project name folder
 custom_project_host  = false # default `project_name.local`
 custom_project_alias = false # default `www.project_name.local`
