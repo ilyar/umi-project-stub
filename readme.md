@@ -47,6 +47,10 @@
 
 phpMyAdmin <http://project_name_dir.local/phpmyadmin/>
 
+### Xdebug
+
+    IDE key = vagrant
+
 ### Настройки окружения `Vagrantfile`
 
 ```bash
