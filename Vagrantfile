@@ -36,7 +36,7 @@ hostmanager_aliases = ["#{project_host_alias}"]
 
 # Environment variables
 
-OS = $custom_vm_os || ENV['VM_OS'] || 'precise'
+OS = $custom_vm_os || ENV['VM_OS'] || 'trusty'
 ARCH = $custom_vm_arch || ENV['VM_ARCH'] || 32
 MEMORY = $custom_vm_memory || ENV['VM_MEMORY'] || 512
 CORES = $custom_vm_cores || ENV['VM_CORES'] || 1
@@ -141,8 +141,9 @@ Vagrant.configure("2") do |config|
 
   # Define VM box to use
   config.vm.box = "ubuntu/#{OS}#{ARCH}"
-  # tested on ubuntu/precise32 20160122.0.1 - OK
-  # tested on ubuntu/trusty32 20160122.0.1 - ERROR - ISSUE #4
+  # tested on ubuntu/precise32 v20160122.0.1 - PHP 5.3.* не поддерживается UMI.CMS
+  # tested on ubuntu/trusty32 v20160122.0.0 - OK
+  # tested on ubuntu/trusty32 v20160802.0.1 - planed
 
   # Set share folder
   config.vm.synced_folder "./" , "/var/www/#{project_name}", :mount_options => ["dmode=777", "fmode=666"]
