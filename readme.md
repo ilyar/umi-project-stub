@@ -11,11 +11,11 @@
 
 ## Использование
 
-    $ git clone https://github.com/ilyar/umi-project-stub.git project_name_dir
-    $ cd project_name_dir
+    $ git clone https://github.com/ilyar/umi-project-stub.git project
+    $ cd project
     $ vagrant up
 
-Для установки UMI.CMS открыть в браузере `http://project_name_dir.local/install.php` и следуйте инструкциям.
+Для установки UMI.CMS открыть в браузере `http://project.local/install.php` и следуйте инструкциям.
 
 Дополнительные комманды для управления виртуальной машиной:
 
