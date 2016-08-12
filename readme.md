@@ -41,11 +41,11 @@
 
 ### MySQL
 
-    host: localhost или project_name_dir.local
+    host: localhost или project.local
     username: root
     password: local
 
-phpMyAdmin <http://project_name_dir.local/phpmyadmin/>
+phpMyAdmin <http://project.local/phpmyadmin/>
 
 ### Xdebug
 
@@ -54,7 +54,7 @@ phpMyAdmin <http://project_name_dir.local/phpmyadmin/>
 ### Настройки окружения `Vagrantfile`
 
 ```bash
-custom_vm_os         = false # default 'precise' or 'trusty'
+custom_vm_os         = false # default 'trusty' - проверено, 'precise' - не поддерживается, а точнее HP 5.3.*
 custom_project_name  = false # default from project name folder
 custom_project_host  = false # default `project_name.local`
 custom_project_alias = false # default `www.project_name.local`
