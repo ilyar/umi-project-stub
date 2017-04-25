@@ -1,0 +1,8 @@
+title: umi-project-stub
+description: Заготовка проекта для разработки на UMI.CMS с использованием Vagrant
+google_analytics: UA-47068199-1
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
